@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>beanvalidation</module>
+        <module>fakeddata</module>
     </modules>
 
     <properties>
@@ -41,5 +42,6 @@
             <version>2.7.1</version>
         </dependency>
     </dependencies>
+
 
 </project>
