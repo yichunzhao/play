@@ -24,6 +24,5 @@ public class DemoBeanValidation {
 
         Set<ConstraintViolation<User>> violations = validator.validate(user);
         System.out.println(violations);
-
     }
 }
