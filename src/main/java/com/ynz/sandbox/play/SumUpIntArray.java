@@ -2,7 +2,6 @@ package com.ynz.sandbox.play;
 
 import java.util.Arrays;
 import java.util.Objects;
-import java.util.stream.Stream;
 
 public class SumUpIntArray {
     private static int[] ints = new int[]{5, 8, 9, 10};

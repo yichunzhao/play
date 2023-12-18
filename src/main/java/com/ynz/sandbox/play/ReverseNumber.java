@@ -2,7 +2,7 @@ package com.ynz.sandbox.play;
 
 /**
  * Reverse a number.
- *
+ * <p>
  * Given a number 123 as input then return 321
  */
 public class ReverseNumber {
