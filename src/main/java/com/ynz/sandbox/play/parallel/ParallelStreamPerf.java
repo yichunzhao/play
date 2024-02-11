@@ -4,17 +4,24 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.stream.IntStream;
 
-public class UsingParallelStream {
+public class ParallelStreamPerf {
 
     public static void main(String[] args) {
+        //measure the time of parallel and sequential stream
+        int[] ints = new int[]{1_000_000, 100_000_000};
 
+        for (int i : ints) {
+            measureTime(i);
+        }
+    }
+
+    private static void measureTime(int limit) {
         var s1 = Instant.now();
-        var r1 = IntStream.range(0, 1_000_000).parallel().sum();
+        var r1 = IntStream.range(0, limit).parallel().sum();
         var e1 = Instant.now();
 
-
         var s2 = Instant.now();
-        var r2 = IntStream.range(0, 1_000_000).sum();
+        var r2 = IntStream.range(0, limit).sum();
         var e2 = Instant.now();
 
         var d1 = Duration.between(s1, e1).toMillis();
