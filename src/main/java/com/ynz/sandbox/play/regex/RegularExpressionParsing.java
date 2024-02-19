@@ -1,4 +1,4 @@
-package com.ynz.sandbox.play;
+package com.ynz.sandbox.play.regex;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
